@@ -172,7 +172,7 @@ export default function Home() {
             href="#sejf"
           >
             <Icon name="grid" size={18} className="text-[#c4f06f]" />
-            Mój sejf
+            Hasła
             <span className="ml-auto rounded-md bg-white/10 px-2 py-0.5 text-[11px] text-[#c1d3cb]">
               {profiles.length}
             </span>
@@ -195,11 +195,10 @@ export default function Home() {
             type="button"
           >
             <Icon name="logout" size={15} />
-            Zablokuj sejf
+            Wyloguj
           </button>
         </div>
         <p className="px-2 pt-5 text-[10px] text-[#78998a]">
-          Wersja demonstracyjna
         </p>
       </aside>
 
@@ -234,7 +233,7 @@ export default function Home() {
                   Mój sejf
                 </span>
                 <span className="mt-0.5 block text-[10px] text-[#929d96]">
-                  Tryb demonstracyjny
+
                 </span>
               </span>
               <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[#e6efe7] text-xs font-bold text-[#3d765b]">
@@ -263,7 +262,7 @@ export default function Home() {
                 Dobrze Cię widzieć
               </p>
               <h1 className="mt-2 text-[30px] font-semibold tracking-[-0.05em] text-[#1e2b25] sm:text-[36px]">
-                Twój sejf
+                Menadżer Haseł
               </h1>
               <p className="mt-1.5 text-sm text-[#7c8982]">
                 Wszystkie ważne loginy w jednym, uporządkowanym miejscu.
@@ -381,7 +380,7 @@ export default function Home() {
                 </span>
                 <h3 className="mt-4 font-semibold text-[#34443c]">
                   {profiles.length === 0
-                    ? "Twój sejf jest pusty"
+                    ? "Brak zapisanych haseł"
                     : "Nie znaleziono profili"}
                 </h3>
                 <p className="mt-1 text-sm text-[#87938c]">
@@ -405,8 +404,6 @@ export default function Home() {
 
           <footer className="mt-10 flex flex-col gap-2 border-t border-[#e9edea] pt-5 text-[11px] leading-5 text-[#9aa49e] sm:flex-row sm:items-center sm:justify-between">
             <p>
-              Tryb demonstracyjny. Hasła są zapisywane lokalnie i nie są
-              szyfrowane.
             </p>
             <button
               className="flex items-center gap-1.5 self-start font-medium text-[#708078] transition hover:text-[#315c4d] sm:self-auto"
@@ -417,7 +414,6 @@ export default function Home() {
               type="button"
             >
               <Icon name="logout" size={14} />
-              Zablokuj sejf
             </button>
           </footer>
         </div>
